@@ -57,4 +57,8 @@ public class FileUtils {
         }
         return data;
     }
+
+    public static String getFileName(String filePath) {
+        return filePath.substring(filePath.lastIndexOf('/') + 1, filePath.length());
+    }
 }
